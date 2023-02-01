@@ -1,0 +1,45 @@
+:root {
+	--dark-background: #1e1e2e;
+	--dark-container: #181825;
+	--white-background: #F8F7F3;
+	--white-container: #F9F9F5;
+}
+body {
+	margin: 16px;
+}
+header {
+	display: box;
+}
+main {
+	display: flex;
+	flex-flow: wrap; /* instead of flow-direction and flex-wrap */
+	justify-content: center;
+}
+.item {
+	border-radius: 6px;
+	flex: 1 1 150px;
+	padding: 50px;
+	margin: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+  /* Dark theme styles go here */
+  body {
+	background: var(--dark-background);
+	color: var(--white-background);
+  }
+  .item {
+	background: var(--dark-container);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  /* Light theme styles go here */
+    body {
+	background: var(--white-background);
+	color: var(--black-background);
+  }
+  .item {
+	background: var(--white-container);
+  }
+}
