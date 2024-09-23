@@ -1,200 +1,217 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Paweł Ilnicki",
+    "label": "Senior Product Communication Specialist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "pawel.ilnicki@allegro.com",
+    "phone": "(+48) 690 452 721",
+    "url": "http://www.pawel-ilnicki.pl",
+    "summary": "Product Communication Specialist transitioning to Front-End Development, with hands-on experience in Python, C++ and Linux environments. Proven ability to implement Object-Oriented Programming (OOP) principles and working with web technologies (JavaScript, SEO). Ability to utilise development tools such as Docker and git, as well as to contribute to open-source projects. Adept at learning new frameworks and working cross-functionally with developers to deliver web solutions. Seeking a Junior Front-End Developer role to further hone technical skills and contribute to impactful web applications.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "os. Przyjaźni 24/49",
+      "postalCode": "61-686",
+      "city": "Poznań",
+      "countryCode": "PL",
+      "region": "Wielkopolskie"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "GitHub",
+        "username": "DeutscheGabanna",
+        "url": "https://github.com/DeutscheGabanna"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "Allegro sp. z o.o.",
+      "position": "Senior Product Communication Specialist",
+      "startDate": "2023-04-01",
+      "summary": "Preparing documentation about product changes on Allegro. Coordinating Product Managers, developers and CX teams in joint efforts to communicate these changes internally and externally.",
+      "highlights": ["Launched help.allegro.com", "Coordinated communication to employees and merchants about the start of allegro.cz and allegro.hu"]
+    },
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "Allegro sp. z o.o.",
+      "position": "Opbox Platform Team Tourist",
+      "startDate": "2022-10-01",
+      "endDate": "2022-11-01",
+      "summary": "Taking part in two 2-week long sprints in the Opbox Platform team responsible for the web rendering service.",
+      "highlights": ["Set up local opbox environment to develop TS components in", "Coordinated talks between Opbox Platform and Pawlacz team for SEO tab in the internal admin tool"]
+    },
+    {
+      "name": "Allegro sp. z o.o.",
+      "position": "Product Communication Specialist",
+      "startDate": "2020-10-08",
+      "endDate": "2023-03-31",
+      "summary": "Preparing documentation about product changes on Allegro. Coordinating Product Managers, developers and CX teams in joint efforts to communicate these changes internally and externally.",
+      "highlights": ["short video content production for Allegro"]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "Adam Mickiewicz University",
+      "location": "Poznań, Poland",
+      "url": "https://amu.edu.pl/en",
+      "area": "English translation",
+      "studyType": "Master's degree",
+      "startDate": "2015",
+      "endDate": "2020",
+      "icon": "fa-solid fa-graduation-cap"
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "title": "The Allegro Spot Award - How we show commitment",
+      "date": "2024-08",
+      "awarder": "Allegro sp. z o.o.",
+      "summary": "Awarded for launching help.allegro.com as a single source of knowledge for merchants on how Allegro works."
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "title": "Bonus remuneration",
+      "date": "2023-06",
+      "awarder": "Allegro sp. z o.o.",
+      "summary": "Awarded to people crucial for the launch of allegro.cz and its success."
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "title": "Allegro Best in Tech Award",
+      "date": "2022-09",
+      "awarder": "Allegro sp. z o.o.",
+      "summary": "Awarded to the entire team of Product Communication."
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Python",
+      "level": "Proficient",
+      "icon": "fa-brands fa-python",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "object-oriented programming",
+        "unit-testing",
+        "cross-platform file IO"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Beginner",
+      "icon": "fa-brands fa-js",
+      "keywords": [
+        "snippets for react-based app Obsidian"
+      ]
+    },
+    {
+      "name": "Linux",
+      "level": "Proficient",
+      "icon": "fa-brands fa-linux",
+      "keywords": [
+        "bash scripting",
+        "command-line interface",
+        "system management"
+      ]
+    },
+    {
+      "name": "Bash",
+      "level": "Proficient",
+      "icon": "fa-solid fa-terminal",
+      "keywords": [
+        "command line interface",
+        "automation scripts",
+        "Linux shell scripting"
+      ]
+    },
+    {
+      "name": "HTML/CSS",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-code",
+      "keywords": [
+        "centering divs",
+        "markup language"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Proficient",
+      "icon": "fa-brands fa-git-alt",
+      "keywords": [
+        "version control systems",
+        "branching",
+        "merging",
+        "distributed work systems"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Proficient",
+      "icon": "fa-brands fa-github",
+      "keywords": [
+        "repository management",
+        "collaboration",
+        "setting pull requests",
+        "workflows"
+      ]
+    },
+    {
+      "name": "GitHub Actions",
+      "level": "Beginner",
+      "icon": "fa-brands fa-github",
+      "keywords": [
+        "deployment automation",
+        "testing automation"
+      ]
+    },
+    {
+      "name": "GPG",
+      "icon": "fa-solid fa-shield-alt",
+      "keywords": [
+        "git commit signing"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "Beginner",
+      "icon": "fa-brands fa-docker",
+      "keywords": [
+        "python containerization",
+        "python deployment"
+      ]
+    },
+    {
+      "name": "Podman",
+      "level": "Beginner",
+      "icon": "fa-solid fa-cubes",
+      "keywords": [
+        "python containerization",
+        "python deployment"
+      ]
+    },
+    {
+      "name": "SEO",
+      "level": "Intermediate",
+      "icon": "fa-solid fa-search",
+      "keywords": [
+        "meta descriptions",
+        "open graph protocol",
+        "no-index"
+      ]
+    },
+    {
+      "name": "cURL",
+      "level": "Beginner",
+      "icon": "fa-solid fa-network-wired",
+      "keywords": [
+        "simple API requests"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
-      "fluency": "Native speaker",
-      "icon": ""
+      "language": "Polish",
+      "fluency": "Native",
+      "icon": "fa-solid fa-house-flag"
     },
     {
       "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "fluency": "C2",
+      "icon": "fa-solid fa-flag"
     }
   ]
 }
