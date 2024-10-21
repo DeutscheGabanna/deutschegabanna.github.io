@@ -2,6 +2,12 @@ body {
     background-color: #1c1c1d;
     color: #e8e8e8;
     font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+    width: 900px;
+}
+@media (max-width: 800px) {
+    body {
+        width: 100%;
+    }
 }
 
 nav a {
@@ -9,9 +15,17 @@ nav a {
     font-weight: 900;
 }
 
+/* FLEX */
 div.flex {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-items: flex-start;
+}
+@media (max-width: 800px) {
+    div.flex {
+        flex-direction: column;
+    }
 }
 
 div.flex > div.item {
@@ -58,7 +72,6 @@ figcaption {
 
 img {
     width: 100%;
-    margin: 100px auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 2%;
     position: relative;
@@ -66,6 +79,7 @@ img {
 }
 
 img:hover {
+    margin: 80px auto;
     transform: scale(1.2);
 }
 
@@ -78,12 +92,13 @@ h1.typewriter {
       typing 1.5s steps(40, end),
       blink-caret .75s step-end infinite;
     width: 18ch;
+    max-width: 90%;
   }
   
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 17ch }
+    to { width: 17ch; }
   }
   
   /* The typewriter cursor effect */
