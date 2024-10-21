@@ -1,0 +1,93 @@
+body {
+    background-color: #1c1c1d;
+    color: #e8e8e8;
+    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+}
+
+nav a {
+    color: #c1c1c1;
+    font-weight: 900;
+}
+
+div.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.flex > div.item {
+    flex-basis: 50%;
+    width: 100%;
+}
+
+div.flex > div.item:last-child {
+    flex-basis: 100%;
+}
+
+div.flex > div.item:first-child {
+    flex-basis: 100%;
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+nav a {
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    padding: 0 1vw 0 1vw;
+}
+
+nav a i:hover {
+    color: #b4befe;
+}
+
+article {
+    margin: 20px;
+}
+
+figcaption {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    margin: 100px auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+    position: relative;
+    transition: all 1s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+h1.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #b4befe; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 1.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    width: 18ch;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 17ch }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #b4befe; }
+  }
