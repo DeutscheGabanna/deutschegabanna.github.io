@@ -2,7 +2,9 @@
     color-scheme: light dark;
     --primary-color: light-dark(#11111b, #e8e8e8);
     --primary-background: light-dark(#f5e0dc, #1c1c1d);
-    --highlight-color: light-dark(#fab387,#f38ba8);
+    --accent-red: #f38ba8;
+    --accent-blue: #b4befe;
+    --accent-purple: #cba6f7;
     --width-threshold: 900px;
 }
 
@@ -24,22 +26,26 @@
 }
 
 body.flex {
-    background-color: light-dark(var(--light-bg), var(--dark-bg));
-    color: light-dark(var(--light-text), var(--dark-text));
+    background-color: var(--primary-background);
+    color: var(--primary-color);
     font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
 }
 
-nav a {
+a {
     color: var(--highlight-color);
     font-weight: 900;
+}
+
+a i {
+    color: var(--highlight-secondary-color);
 }
 
 /* Main flex structure */
 /* ------------------- */
 div.flex {
-    max-width: 900px;
+    max-width: var(--width-threshold);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -52,7 +58,7 @@ div.flex .item {
 }
 
 article {
-    min-width: 400px;
+    min-width: calc(var(--width-threshold)/2);
 }
 
 div.flex .full-size.item {
@@ -69,21 +75,23 @@ div.flex .full-size.item {
 nav {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
-nav a {
-    transition: all 0.2s ease;
+nav.main a {
+    background: linear-gradient(120deg, var(--accent-blue), var(--accent-purple), var(--accent-red));
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    border-radius: 5%;
+    padding-inline: 1rem;
+    align-content: space-around;
+    transition: background-position .5s;
 }
 
 nav a:hover {
-    transform: scale(1.2);
-    padding: 0 1vw 0 1vw;
+    background-position: 0 0;
 }
 
-nav a i:hover {
-    color: #b4befe;
-}
 
 figure {
     max-width: fit-content;
@@ -93,20 +101,27 @@ figure {
 
 img {
     max-width: 400px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 2%;
     transition: all 1s ease;
+    margin: 2rem auto 1rem auto;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%,  
+              100%, 0.075),
+              0 0 0 1px hsla(0, 0%, 0%, 0.05),
+              0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+              0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
+              0 3.5px 6px hsla(0, 0%, 0%, 0.09);
 }
 
+
+
 img:hover {
-    margin: auto;
     transform: scale(1.2);
 }
 
 h1.typewriter {
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid var(--highlight-color);
+    border-right: .15em solid var(--accent-red);
     /* The typwriter cursor */
     white-space: nowrap;
     /* Keeps the content on a single line */
@@ -138,6 +153,6 @@ h1.typewriter {
     }
 
     50% {
-        border-color: var(--highlight-color);
+        border-color: var(--accent-red);
     }
 }
