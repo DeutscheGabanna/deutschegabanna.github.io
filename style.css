@@ -1,52 +1,63 @@
-body {
-    background-color: #1c1c1d;
-    color: #e8e8e8;
-    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
-    width: 900px;
+:root {
+    --width-threshold: 900px;
+    --dark-grey: #1c1c1d;
+    --lavender: #b4befe;
+    --cream: #c1c1c1;
+    --text-white: #e8e8e8;
 }
-@media (max-width: 800px) {
-    body {
-        width: 100%;
-    }
+
+* {
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+body.flex {
+    background-color: var(--dark-grey);
+    color: var(--text-white);
+    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
 }
 
 nav a {
-    color: #c1c1c1;
+    color: var(--cream);
     font-weight: 900;
 }
 
-/* FLEX */
+/* Main flex structure */
+/* ------------------- */
 div.flex {
+    max-width: 900px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 }
-@media (max-width: 800px) {
+
+div.flex .item {
+    flex: 1 1;
+}
+
+article {
+    min-width: 400px;
+}
+
+div.flex .full-size.item {
+    flex-basis: 100%;
+}
+
+@media (max-width: var(--width-threshold)) {
     div.flex {
         flex-direction: column;
     }
 }
-
-div.flex > div.item {
-    flex-basis: 50%;
-    width: 100%;
-}
-
-div.flex > div.item:last-child {
-    flex-basis: 100%;
-}
-
-div.flex > div.item:first-child {
-    flex-basis: 100%;
-    margin: 20px;
-}
+/* ------------------- */
 
 nav {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin: 20px;
 }
 
 nav a {
@@ -62,47 +73,59 @@ nav a i:hover {
     color: #b4befe;
 }
 
-article {
-    margin: 20px;
-}
-
-figcaption {
-    text-align: center;
+figure {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
-    width: 100%;
+    max-width: 400px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 2%;
-    position: relative;
     transition: all 1s ease;
 }
 
 img:hover {
-    margin: 80px auto;
+    margin: auto;
     transform: scale(1.2);
 }
 
 h1.typewriter {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #b4befe; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #b4befe;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    letter-spacing: .15em;
+    /* Adjust as needed */
     animation: 
-      typing 1.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-    width: 18ch;
-    max-width: 90%;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 17ch; }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #b4befe; }
-  }
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    margin: 0 auto;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: var(--lavender);
+    }
+}
