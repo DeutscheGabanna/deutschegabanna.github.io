@@ -18,7 +18,7 @@
     &:has(input[name="color-scheme"][value="dark"]:checked) {
       color-scheme: dark;
     }
-  }
+}
 
 @font-face {
     font-family: "IBM Plex Mono", serif;
@@ -210,8 +210,6 @@ img {
               0 3.5px 6px hsla(0, 0%, 0%, 0.09);
 }
 
-
-
 img:hover {
     transform: scale(1.2);
 }
@@ -257,3 +255,22 @@ h1.typewriter {
         border-color: var(--accent-red);
     }
 }
+
+/* Icons */
+.icon {
+    display: block;
+    width: 2rem;    
+    height: 2rem;
+    background-size: cover;
+    filter: invert();
+}
+
+.icon:hover {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(14%) saturate(6045%) hue-rotate(293deg) brightness(100%) contrast(91%);
+    transition: filter 1s ease;
+}
+
+.icon.github { background-image: url(/assets/img/brand-github.svg); }
+.icon.linkedin { background-image: url(/assets/img/brand-linkedin.svg); }
+.icon.mail { background-image: url(assets/img/mail.svg); }
+.icon.youtube { background-image: url(assets/img/brand-youtube.svg); }
