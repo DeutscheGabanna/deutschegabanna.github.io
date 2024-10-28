@@ -1,11 +1,18 @@
+/* MAIN COLOR SCHEME */
+/* ------------------- */
+
 :root {
     color-scheme: light dark;
     --primary-color: light-dark(#11111b, #e8e8e8);
     --primary-background: light-dark(#f5e0dc, #1c1c1d);
-    --accent-red: #f38ba8;
-    --accent-blue: #b4befe;
-    --accent-purple: #cba6f7;
-    --width-threshold: 50em;
+
+    --accent-one: light-dark(hsla(198, 55%, 69%, 1), hsla(198, 55%, 50%, 1));
+    --accent-two: light-dark(hsla(238, 66%, 83%, 1), hsla(238, 66%, 60%, 1));
+    --accent-three: light-dark(hsla(221, 74%, 74%, 1), hsla(221, 74%, 55%, 1));
+
+    --bg-one: light-dark(hsla(198, 55%, 69%, 0.3), hsla(198, 55%, 50%, 0.3));
+    --bg-two: light-dark(hsla(238, 66%, 83%, 0.3), hsla(238, 66%, 60%, 0.3));
+    --bg-three: light-dark(hsla(221, 74%, 74%, 0.3), hsla(221, 74%, 55%, 0.3));
 }
 
 :root {
@@ -26,20 +33,24 @@
   box-sizing: border-box;
 }
 
-body {
+html {
     background-color: var(--primary-background);
-    color: var(--primary-color);
-    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
-    width: min(100ch, 80ch);
-    transition: width 0.5s ease;
-    margin-inline: auto;
+    background-image:
+    radial-gradient(at 35% 75%, var(--bg-one) 0px, transparent 70%),
+    radial-gradient(at 79% 41%, var(--bg-two) 0px, transparent 80%),
+    radial-gradient(at 19% 28%, var(--bg-three) 0px, transparent 50%);
+    min-height: 100%;
+    transition: background-color 0.2s ease;
 }
 
-@media (width <= min(100ch, 80ch)) {
-    body {
-        width: 100%;
-        transition: width 0.5s ease;
-    }
+body {
+    height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    color: var(--primary-color);
+    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+    transition: color 0.2s ease;
+    margin-inline: auto;
 }
 
 a {
@@ -59,10 +70,12 @@ div.flex {
     justify-content: center;
     row-gap: 2rem;
     column-gap: 0.5rem;
+    margin-inline: 3rem;
 }
 
 .item {
     padding: 10px;
+    backdrop-filter: blur(10px);
 }
 
 div.flex .full-size.item {
@@ -70,7 +83,9 @@ div.flex .full-size.item {
 }
 
 div.flex article.item {
-    flex: 1.6;
+    flex: 1.8;
+    min-width: 35ch;
+    max-width: 70ch;
 }
 
 div.flex .item {
@@ -78,21 +93,27 @@ div.flex .item {
 }
 
 figure {
+    flex: 0 1;
     margin: 0;
+    max-width: 443px;
+    min-width: 200px;
 }
 
 /* CARD STRUCTURE */
 /* ------------------- */
 .grid {
     display: grid;
+    max-width: 100ch;
+    --min: 30ch;
     gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
     grid-auto-rows: 1fr;
 }
 
 .cell {
     display: flex;
     flex-wrap: wrap;
+    backdrop-filter: blur(15px);
 }
 .cell>* {
     flex: 1 1 100%;
@@ -109,7 +130,7 @@ figure {
 }
 
 .cell>h3 {
-    background: linear-gradient(120deg, var(--accent-blue), var(--accent-purple), var(--accent-red));
+    background: linear-gradient(120deg, var(--accent-one), var(--accent-two), var(--accent-three));
     border-radius: 2% 2% 0 0%;
     padding: 1rem;
     margin: 0;
@@ -135,29 +156,22 @@ nav {
 }
 
 nav.main a {
-    background: linear-gradient(120deg, var(--accent-blue), var(--accent-purple), var(--accent-red));
+    background: linear-gradient(120deg, var(--accent-one), var(--accent-two), var(--accent-three));
     background-size: 200% 100%;
     background-position: 100% 0;
     border-radius: 5%;
-    padding-inline: 1rem;
+    padding: 0.5rem;
     transition: background-position .5s;
+    box-shadow: inset 0 0 0 1px rgb(221 214 254 / .25), 0 0 transparent;
 }
 
 nav.main a:hover {
     background-position: 0 0;
 }
 
-nav.socials a:hover {
-    color: var(--accent-blue);
-}
-
 img.my-face {
     display: block;
     width: 100%;
-    min-width: 10rem;
-    max-width: 30rem;
-
-    max-width: 400px;
     border-radius: 2%;
     margin: 2rem auto 1rem auto;
 }
@@ -216,7 +230,7 @@ ul.breadcrumb li a:hover {
   
 /* CHECKED STYLES */
 [type=radio]:checked + img {
-    filter: invert(1) drop-shadow(0px 0px 3px var(--accent-red)) !important;
+    filter: invert(1) drop-shadow(0px 0px 3px var(--accent-one)) !important;
 }
 
 /* ANIMATIONS */
@@ -224,7 +238,7 @@ ul.breadcrumb li a:hover {
 
 h1.typewriter {
     overflow: hidden;
-    border-right: .15em solid var(--accent-red);
+    border-right: .15em solid var(--accent-one);
     white-space: nowrap;
     letter-spacing: .15em;
     animation: 
@@ -257,7 +271,7 @@ h1.typewriter {
     }
 
     50% {
-        border-color: var(--accent-red);
+        border-color: var(--accent-one);
     }
 }
 
@@ -287,7 +301,7 @@ img.icon {
 }
 
 .icon:hover {
-    filter: drop-shadow(0px 0px 3px var(--accent-blue)) !important;
+    filter: drop-shadow(0px 0px 3px var(--accent-two)) !important;
     transition: filter 0.4s ease;
 }
 
