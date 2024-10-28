@@ -19,21 +19,52 @@
         <link href="/css/solid.css" rel="stylesheet" />
     </head>
 
-    <body class="flex">
-        <div>
+    <body>
+        <div class="flex">
             <nav class="main full-size item">
                 <a href="/">Home</a>
                 <a href="/resume">Resume</a>
                 <a href="/portfolio">Portfolio</a>
-                <label><input type="radio" name="color-scheme" value="system" checked><i class="fa-solid fa-circle-half-stroke"></i></input></label>
-                <label><input type="radio" name="color-scheme" value="light"><i class="fa-solid fa-sun"></i></input></label>
-                <label><input type="radio" name="color-scheme" value="dark"><i class="fa-solid fa-moon"></i></input></label>
+                <nav>
+                    <label>
+                        <input type="radio" name="color-scheme" value="system" checked>
+                        <img class="icon" src="/assets/img/moon-or-sun.svg" alt="Use system colour">
+                    </label>
+                    <label>
+                        <input type="radio" name="color-scheme" value="light">
+                        <img class="icon" src="/assets/img/sun.svg" alt="Light-mode">
+                    </label>
+                    <label>
+                        <input type="radio" name="color-scheme" value="dark">
+                        <img class="icon" src="/assets/img/moon.svg" alt="Dark-mode">
+                    </label>
+                </nav>
             </nav> 
-    
-            <h1 class="typewriter">404</h1>
-            <p>There is no page under this address.</p>
-            <a href="/">Take me home</a>, country home, West Virginia<br />
-            <img src="/assets/img/aaa.gif">
+
+            <nav class="full-size item">
+                <ul class="breadcrumb">
+                    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">     
+                        <a href="/" itemprop="url">
+                            <span itemprop="title">God knows where</span>
+                        </a> 
+                    </li>
+                </ul>
+            </nav>
+            
+            <span>
+                <h1 class="typewriter">404</h1>
+                <p>There is no page under this address.</p>
+                <a href="/">Take me home</a>, country home, West Virginia<br />
+                <img src="/assets/img/aaa.gif">
+            </span>
+            
+            <nav class="socials full-size item">
+                <a href="mailto:pawel.ilnicki@allegro.com"><img src="/assets/img/mail.svg" class="icon"></a>
+                <a href="https://github.com/DeutscheGabanna"><img src="/assets/img/brand-github.svg" class="icon"></a>
+                <a href="https://www.linkedin.com/in/pawe%C5%82-ilnicki-6760a4162"><img src="/assets/img/brand-linkedin.svg" class="icon"></a>
+                <a href="https://www.youtube.com/@mayorsministers6981"><img src="/assets/img/brand-youtube.svg" class="icon"></a>
+            </nav>
+
         </div>
     </body>
 </html>

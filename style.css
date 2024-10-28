@@ -169,6 +169,10 @@ nav.main a:hover {
     background-position: 0 0;
 }
 
+img {
+    margin: 2rem 0 2rem 0;
+}
+
 img.my-face {
     display: block;
     width: 100%;
