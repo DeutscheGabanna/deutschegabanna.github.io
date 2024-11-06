@@ -11,13 +11,14 @@
         
         <!-- Structured data: https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
         <!-- It is either a top level path or a direct descendant of top level path - SO NO BREADCRUMB DATA NEEDED. -->
-         
+        
         <link rel="stylesheet" href="/style.css">
     </head>
 
     <body>
-        <div class="flex">
-            <nav class="main full-size item">
+
+        <header>
+            <nav class="main">
                 <a href="/">Home</a>
                 <a href="/resume">Resume</a>
                 <a href="/portfolio">Portfolio</a>
@@ -35,19 +36,19 @@
                         <img class="icon" src="/assets/img/moon.svg" alt="Dark-mode">
                     </label>
                 </nav>
-            </nav> 
+            </nav>
 
-            <nav class="full-size item">
-                <ul class="breadcrumb">
-                    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">     
-                        <a href="/" itemprop="url">
-                            <span itemprop="title">Home</span>
-                        </a> 
-                    </li>
-                </ul>
-            </nav>     
+            <ul class="breadcrumb">
+                <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">     
+                    <a href="/" itemprop="url">
+                        <span itemprop="title">Home</span>
+                    </a> 
+                </li>
+            </ul>
+        </header>
 
-            <article class="item">
+        <main class="flex">
+            <article class="item x2-space">
                 <h1 class="typewriter">Hi, I'm Paweł!</h1>
                 <h2>A versatile tech-enthusiast, not-so-versatile painter, writer and gamer.</h2>
                 <p>If you couldn't tell from the heading, I had actually used a type-writer for writing some of my books.</p>
@@ -70,19 +71,24 @@
             <figure class="item">
                 <img src="/assets/img/me.webp" class="zoom my-face">
                 <figcaption>
-                    room 03-59<br/>
-                    Allegro Sp. z o.o., Wierzbięcice 1B<br/>
-                    61-569 Poznań
+                    <address>
+                        03-59<br/>
+                        Allegro Sp. z o.o., Wierzbięcice 1B<br/>
+                        61-569 Poznań
+                    </address>
                 </figcaption>
             </figure>
+        </main>
 
-            <nav class="socials full-size item">
-                <a href="mailto:pawel.ilnicki@allegro.com"><img src="/assets/img/mail.svg" class="icon"></a>
-                <a href="https://github.com/DeutscheGabanna"><img src="/assets/img/brand-github.svg" class="icon"></a>
-                <a href="https://www.linkedin.com/in/pawe%C5%82-ilnicki-6760a4162"><img src="/assets/img/brand-linkedin.svg" class="icon"></a>
-                <a href="https://www.youtube.com/@mayorsministers6981"><img src="/assets/img/brand-youtube.svg" class="icon"></a>
+        <footer>
+            <p>Made by myself &copy; 2024</p>
+            <nav class="socials">
+                <a href="mailto:pawel.ilnicki@allegro.com"><img src="/assets/img/mail.svg" class="icon" title="Drop me a line!"></a>
+                <a href="https://github.com/DeutscheGabanna"><img src="/assets/img/brand-github.svg" class="icon" title="Check out my GitHub profile!"></a>
+                <a href="https://www.linkedin.com/in/pawe%C5%82-ilnicki-6760a4162"><img src="/assets/img/brand-linkedin.svg" class="icon" title="Check out my Linkedin profile!"></a>
+                <a href="https://www.youtube.com/@mayorsministers6981"><img src="/assets/img/brand-youtube.svg" class="icon" title="Check out my YouTube profile!"></a>
             </nav>
-
-        </div>
+        </footer>
+        
     </body>
 </html>
