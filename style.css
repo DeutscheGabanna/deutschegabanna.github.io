@@ -108,6 +108,7 @@ figure {
     gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
     grid-auto-rows: 1fr;
+    margin-inline: auto;
 }
 
 .cell {
