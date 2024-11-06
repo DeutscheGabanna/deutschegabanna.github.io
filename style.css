@@ -184,6 +184,7 @@ ul.breadcrumb {
     font-weight: 300;
     font-size: small;
     padding-inline-start: 0;
+    text-align: center;
 }
 
 /* Display list items side by side */
