@@ -11,9 +11,18 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: var(--primary-color);
-  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
   transition: color 0.2s ease;
   margin-inline: 3rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "IBM Plex Mono", "Courier New", Courier, monospace;
 }
 
 h1 {
@@ -35,6 +44,27 @@ p {
 a {
   font-weight: 900;
   color: var(--primary-color);
+}
+
+:root {
+  color-scheme: light dark;
+  --primary-color: light-dark(#11111b, #e8e8e8);
+  --primary-background: light-dark(#f5e0dc, #1c1c1d);
+  --accent-one: light-dark(hsla(198, 55%, 69%, 1), hsla(198, 55%, 50%, 1));
+  --accent-two: light-dark(hsla(238, 66%, 83%, 1), hsla(238, 66%, 60%, 1));
+  --accent-three: light-dark(hsla(221, 74%, 74%, 1), hsla(221, 74%, 55%, 1));
+  --bg-one: light-dark(hsla(198, 55%, 69%, 0.3), hsla(198, 55%, 50%, 0.3));
+  --bg-two: light-dark(hsla(238, 66%, 83%, 0.3), hsla(238, 66%, 60%, 0.3));
+  --bg-three: light-dark(hsla(221, 74%, 74%, 0.3), hsla(221, 74%, 55%, 0.3));
+}
+:root:has(input[name=color-scheme][value=system]:checked) {
+  color-scheme: light dark;
+}
+:root:has(input[name=color-scheme][value=light]:checked) {
+  color-scheme: light;
+}
+:root:has(input[name=color-scheme][value=dark]:checked) {
+  color-scheme: dark;
 }
 
 @font-face {
