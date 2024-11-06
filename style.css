@@ -64,7 +64,7 @@ a i {
 
 /* MAIN FLEX STRUCTURE */
 /* ------------------- */
-div.flex {
+.flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -78,17 +78,17 @@ div.flex {
     backdrop-filter: blur(10px);
 }
 
-div.flex .full-size.item {
+.flex .full-size.item {
     flex-basis: 100%;
 }
 
-div.flex article.item {
+.flex article.item {
     flex: 1.8;
     min-width: 35ch;
     max-width: 70ch;
 }
 
-div.flex .item {
+.flex .item {
     flex: 1;
 }
 
@@ -184,7 +184,6 @@ ul.breadcrumb {
     font-weight: 300;
     font-size: small;
     padding-inline-start: 0;
-    margin-top: -25px;
 }
 
 /* Display list items side by side */
@@ -388,3 +387,10 @@ img.icon {
     font-style: italic;
     src: url(assets/fonts/IBMPlexMono-BoldItalic.ttf);
 }
+
+/* FOOTER */
+/* ------------------- */
+footer {
+    text-align: center;
+    padding: 1rem;
+  }
