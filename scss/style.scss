@@ -1,40 +1,5 @@
 @forward 'globals';
 
-/* MAIN COLOR SCHEME */
-/* ------------------- */
-
-:root {
-    color-scheme: light dark;
-    --primary-color: light-dark(#11111b, #e8e8e8);
-    --primary-background: light-dark(#f5e0dc, #1c1c1d);
-
-    --accent-one: light-dark(hsla(198, 55%, 69%, 1), hsla(198, 55%, 50%, 1));
-    --accent-two: light-dark(hsla(238, 66%, 83%, 1), hsla(238, 66%, 60%, 1));
-    --accent-three: light-dark(hsla(221, 74%, 74%, 1), hsla(221, 74%, 55%, 1));
-
-    --bg-one: light-dark(hsla(198, 55%, 69%, 0.3), hsla(198, 55%, 50%, 0.3));
-    --bg-two: light-dark(hsla(238, 66%, 83%, 0.3), hsla(238, 66%, 60%, 0.3));
-    --bg-three: light-dark(hsla(221, 74%, 74%, 0.3), hsla(221, 74%, 55%, 0.3));
-}
-
-:root {
-    &:has(input[name="color-scheme"][value="system"]:checked) {
-      color-scheme: light dark;
-    }
-    &:has(input[name="color-scheme"][value="light"]:checked) {
-      color-scheme: light;
-    }
-    &:has(input[name="color-scheme"][value="dark"]:checked) {
-      color-scheme: dark;
-    }
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 main {
     max-width: 120ch;
     margin: auto;
@@ -188,11 +153,7 @@ ul.breadcrumb li a:hover {
     width: 0;
     height: 0;
 }
-  
-  
-  /* IMAGE STYLES */
 
-  /* IMAGE STYLES */
 [type=radio] + img {
     cursor: pointer;
 }
@@ -262,7 +223,7 @@ dt::after {
 /* ICONS */
 /* ------------------- */
 
-.icon {
+img.icon {
     display: block;
 }
 
@@ -278,7 +239,7 @@ img.my-face {
     min-width: 250px;
 }
 
-.inline.icon {
+img.inline.icon {
     display: inline;
     vertical-align: text-bottom;
     padding-inline: 0.5rem;
