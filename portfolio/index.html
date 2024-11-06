@@ -11,13 +11,14 @@
         
         <!-- Structured data: https://developers.google.com/search/docs/appearance/structured-data/breadcrumb -->
         <!-- It is either a top level path or a direct descendant of top level path - SO NO BREADCRUMB DATA NEEDED. -->
-
+        
         <link rel="stylesheet" href="/style.css">
     </head>
 
     <body>
-        <div class="flex">
-            <nav class="main full-size item">
+
+        <header>
+            <nav class="main">
                 <a href="/">Home</a>
                 <a href="/resume">Resume</a>
                 <a href="/portfolio">Portfolio</a>
@@ -36,41 +37,43 @@
                     </label>
                 </nav>
             </nav> 
+    
+            <ul class="breadcrumb">
+                <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">     
+                    <a href="/" itemprop="url">
+                        <span itemprop="title">Home</span>
+                    </a> 
+                </li>
+                <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <a href="/portfolio/" itemprop="url">
+                        <span itemprop="title">Portfolio</span>
+                    </a> 
+                </li>
+            </ul> 
+        </header> 
 
-            <nav class="full-size item">
-                <ul class="breadcrumb">
-                    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">     
-                        <a href="/" itemprop="url">
-                            <span itemprop="title">Home</span>
-                        </a> 
-                    </li>
-                    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-                        <a href="/portfolio/" itemprop="url">
-                            <span itemprop="title">Portfolio</span>
-                        </a> 
-                    </li>
-                </ul>
-            </nav>                
+        <main class="flex">
+            <a href="/portfolio/help-allegro-com" class="cell zoom">
+                <h3>help.allegro.com</h3>
+                <p>I completely redesigned and implemented Help Center for merchants selling on Allegro.</p>
+                <b>Read more</b>
+            </a>
+            <a href="/portfolio/help-allegro-com" class="cell zoom">
+                <h3><code>.csv</code> to <code>.md</code> converter</h3>
+                <p>I am the creator and maintainer of an open-source file converter.</p>
+                <b>Read more</b>
+            </a>
+        </main>
 
-            <div class="grid">
-                <a href="/portfolio/help-allegro-com" class="cell zoom">
-                    <h3>help.allegro.com</h3>
-                    <p>I completely redesigned and implemented Help Center for merchants selling on Allegro.</p>
-                    <b>Read more</b>
-                </a>
-                <a href="/portfolio/help-allegro-com" class="cell zoom">
-                    <h3><code>.csv</code> to <code>.md</code> converter</h3>
-                    <p>I am the creator and maintainer of an open-source file converter.</p>
-                    <b>Read more</b>
-                </a>
-            </div>
-
-            <nav class="socials full-size item">
-                <a href="mailto:pawel.ilnicki@allegro.com"><img src="/assets/img/mail.svg" class="icon"></a>
-                <a href="https://github.com/DeutscheGabanna"><img src="/assets/img/brand-github.svg" class="icon"></a>
-                <a href="https://www.linkedin.com/in/pawe%C5%82-ilnicki-6760a4162"><img src="/assets/img/brand-linkedin.svg" class="icon"></a>
-                <a href="https://www.youtube.com/@mayorsministers6981"><img src="/assets/img/brand-youtube.svg" class="icon"></a>
+        <footer>
+            <p>Made by myself &copy; 2024</p>
+            <nav class="socials">
+                <a href="mailto:pawel.ilnicki@allegro.com"><img src="/assets/img/mail.svg" class="icon" title="Drop me a line!"></a>
+                <a href="https://github.com/DeutscheGabanna"><img src="/assets/img/brand-github.svg" class="icon" title="Check out my GitHub profile!"></a>
+                <a href="https://www.linkedin.com/in/pawe%C5%82-ilnicki-6760a4162"><img src="/assets/img/brand-linkedin.svg" class="icon" title="Check out my Linkedin profile!"></a>
+                <a href="https://www.youtube.com/@mayorsministers6981"><img src="/assets/img/brand-youtube.svg" class="icon" title="Check out my YouTube profile!"></a>
             </nav>
-        </div>
+        </footer>
+        
     </body>
 </html>
