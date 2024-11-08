@@ -39,15 +39,11 @@
                 </nav>
             </nav> 
 
-            <nav class="full-size item">
-                <ul class="breadcrumb">
-                    <li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">     
-                        <a href="/" itemprop="url">
-                            <span itemprop="title">God knows where</span>
-                        </a> 
-                    </li>
-                </ul>
-            </nav>
+            <ul itemscope itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="/"><span itemprop="name">God knows where</span></a>
+                  <meta itemprop="position" content="1" /></li>
+            </ul>
         </header>
 
         <main class="flex">
